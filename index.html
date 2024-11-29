@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mastertec</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+</head>
+<body>
+    <header class="ecommerce-header">
+        <div class="container">
+            <!-- Logo -->
+            <div class="logo">
+                <img src="rsc/logo-mastertec.jpg" alt="Mastertec Logo" />
+            </div>      
+    
+            <!-- Div vacío 1 -->
+            <div class="empty-space-1"></div>
+    
+            <!-- Barra de búsqueda -->
+            <div class="search-bar">
+                <input type="text" placeholder="Buscar productos..." aria-label="Buscar productos">
+                <button type="button" aria-label="Buscar">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+            
+            <!-- Div vacío 2 -->
+            <div class="empty-space-2"></div>
+    
+            <!-- Iconos: Perfil y Carrito -->
+            <div class="header-icons">
+                <button class="profile-button" aria-label="Perfil">
+                    <i class="fas fa-user"></i>
+                </button>
+                <button class="cart-button" aria-label="Carrito">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </button>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Menú de categorías (fuera del contenedor) -->
+    <nav class="categories-menu">
+        <ul class="menu">
+            <li class="menu-item">
+                <a href="#">Equipo de Cómputo</a>
+                <ul class="submenu">
+                    <li><a href="#">Desktop</a></li>
+                    <li><a href="#">Notebook</a></li>
+                    <li><a href="#">Monitores</a></li>
+                    <li><a href="#">Servidores y Partes</a></li>
+                </ul>
+            </li>
+            <li class="menu-item">
+                <a href="#">Componentes de PC</a>
+                <ul class="submenu">
+                    <li><a href="#">Memorias, Discos Duros y Procesadores</a></li>
+                    <li><a href="#">Tarjetas Madre, Video y Red</a></li>
+                    <li><a href="#">Cases y Fuentes de Poder</a></li>
+                    <li><a href="#">Partes y Repuestos</a></li>
+                </ul>
+            </li>
+            <li class="menu-item">
+                <a href="#">Periféricos y Accesorios</a>
+                <ul class="submenu">
+                    <li><a href="#">Teclados y Mouse</a></li>
+                    <li><a href="#">Micrófonos y Audífonos</a></li>
+                    <li><a href="#">Parlantes</a></li>
+                    <li><a href="#">Adaptadores</a></li>
+                    <li><a href="#">Medios de Almacenamiento Externo</a></li>
+                    <li><a href="#">Mochilas y Maletines</a></li>
+                    <li><a href="#">Candados</a></li>
+                </ul>
+            </li>
+            <li class="menu-item">
+                <a href="#">Impresión y Escaneo</a>
+                <ul class="submenu">
+                    <li><a href="#">Impresoras Láser</a></li>
+                    <li><a href="#">Impresoras Matriciales</a></li>
+                    <li><a href="#">Impresoras de Inyección de Tinta</a></li>
+                    <li><a href="#">Plotters</a></li>
+                    <li><a href="#">Multifuncionales</a></li>
+                    <li><a href="#">Escáneres</a></li>
+                    <li><a href="#">Consumibles de Impresión</a></li>
+                </ul>
+            </li>
+            <li class="menu-item">
+                <a href="#">Ofertas</a>
+            </li>
+            <li class="menu-item">
+                <a href="#">Marcas Asociadas</a>
+            </li>
+        </ul>
+    </nav>
+    
+    <section id="categorias" class="categorias">
+        <h2>Categorías</h2>
+        <div class="category-grid">
+            <!-- Ítem activo inicial -->
+            <div class="category-item active" data-category="Equipo de Cómputo" role="button" aria-label="Equipo de Cómputo categoría">
+                <i class="fas fa-desktop"></i>
+                <h3>Equipo de Cómputo</h3>
+                <p>Encuentra computadoras y estaciones de trabajo ideales para tus necesidades.</p>
+            </div>
+    
+            <!-- Ítem siguiente -->
+            <div class="category-item next" data-category="Componentes de PC" role="button" aria-label="Componentes de PC categoría">
+                <i class="fas fa-microchip"></i>
+                <h3>Componentes de PC</h3>
+                <p>Actualiza tu equipo con los mejores componentes.</p>
+            </div>
+    
+            <!-- Otros ítems -->
+            <div class="category-item" data-category="Redes y Conectividad" role="button" aria-label="Redes y Conectividad categoría">
+                <i class="fas fa-network-wired"></i>
+                <h3>Redes y Conectividad</h3>
+                <p>Soluciones para redes y conexión eficiente.</p>
+            </div>
+            <div class="category-item" data-category="Seguridad Electrónica" role="button" aria-label="Seguridad Electrónica categoría">
+                <i class="fas fa-shield-alt"></i>
+                <h3>Seguridad Electrónica</h3>
+                <p>Protege tu espacio con los mejores sistemas de seguridad.</p>
+            </div>
+    
+            <!-- Ítem previo -->
+            <div class="category-item prev" data-category="Impresión y Escaneo" role="button" aria-label="Impresión y Escaneo categoría">
+                <i class="fas fa-print"></i>
+                <h3>Impresión y Escaneo</h3>
+                <p>Todo lo que necesitas para impresión y digitalización.</p>
+            </div>
+        </div>
+    </section> 
+
+
+
+
+
+
+
+
+
+
+
+
+    <section class="fpGfeatured-products">
+        <div class="fpGcontainer">
+            <h2 class="fpGsection-title">Productos Destacados</h2>
+            <!-- Swiper Container -->
+            <div class="fpGswiper">
+                <div class="fpGswiper-wrapper">
+                    <!-- Producto 1 -->
+                    <div class="fpGswiper-slide fpGproduct-card">
+                        <img src="https://i5.walmartimages.com/asr/17e1c9d3-e787-482e-b026-10a0ea82f429_1.28a0d7ac3f77c504a8e4d7071a3818e0.jpeg" alt="Producto 1" class="fpGproduct-image">
+                        <h3 class="fpGproduct-title">Laptop HP 15"</h3>
+                        <p class="fpGproduct-description">Potente laptop para trabajo y estudio.</p>
+                        <span class="fpGproduct-price">$750.00</span>
+                        <button class="fpGbtn-buy">Comprar ahora</button>
+                    </div>
+                    <!-- Producto 2 -->
+                    <div class="fpGswiper-slide fpGproduct-card">
+                        <img src="https://i5.walmartimages.com/asr/17e1c9d3-e787-482e-b026-10a0ea82f429_1.28a0d7ac3f77c504a8e4d7071a3818e0.jpeg" alt="Producto 2" class="fpGproduct-image">
+                        <h3 class="fpGproduct-title">Monitor Samsung 24"</h3>
+                        <p class="fpGproduct-description">Pantalla Full HD con tecnología Eye Saver.</p>
+                        <span class="fpGproduct-price">$180.00</span>
+                        <button class="fpGbtn-buy">Comprar ahora</button>
+                    </div>
+                    <!-- Producto 3 -->
+                    <div class="fpGswiper-slide fpGproduct-card">
+                        <img src="https://i5.walmartimages.com/asr/17e1c9d3-e787-482e-b026-10a0ea82f429_1.28a0d7ac3f77c504a8e4d7071a3818e0.jpeg" alt="Producto 3" class="fpGproduct-image">
+                        <h3 class="fpGproduct-title">Teclado Mecánico Logitech</h3>
+                        <p class="fpGproduct-description">Iluminación RGB y switches silenciosos.</p>
+                        <span class="fpGproduct-price">$120.00</span>
+                        <button class="fpGbtn-buy">Comprar ahora</button>
+                    </div>
+                    <div class="fpGswiper-slide fpGproduct-card">
+                        <img src="https://i5.walmartimages.com/asr/17e1c9d3-e787-482e-b026-10a0ea82f429_1.28a0d7ac3f77c504a8e4d7071a3818e0.jpeg" alt="Producto 1" class="fpGproduct-image">
+                        <h3 class="fpGproduct-title">Laptop HP 15"</h3>
+                        <p class="fpGproduct-description">Potente laptop para trabajo y estudio.</p>
+                        <span class="fpGproduct-price">$750.00</span>
+                        <button class="fpGbtn-buy">Comprar ahora</button>
+                    </div>
+                    <!-- Producto 2 -->
+                    <div class="fpGswiper-slide fpGproduct-card">
+                        <img src="https://i5.walmartimages.com/asr/17e1c9d3-e787-482e-b026-10a0ea82f429_1.28a0d7ac3f77c504a8e4d7071a3818e0.jpeg" alt="Producto 2" class="fpGproduct-image">
+                        <h3 class="fpGproduct-title">Monitor Samsung 24"</h3>
+                        <p class="fpGproduct-description">Pantalla Full HD con tecnología Eye Saver.</p>
+                        <span class="fpGproduct-price">$180.00</span>
+                        <button class="fpGbtn-buy">Comprar ahora</button>
+                    </div>
+                    <!-- Producto 3 -->
+                    <div class="fpGswiper-slide fpGproduct-card">
+                        <img src="https://i5.walmartimages.com/asr/17e1c9d3-e787-482e-b026-10a0ea82f429_1.28a0d7ac3f77c504a8e4d7071a3818e0.jpeg" alt="Producto 3" class="fpGproduct-image">
+                        <h3 class="fpGproduct-title">Teclado Mecánico Logitech</h3>
+                        <p class="fpGproduct-description">Iluminación RGB y switches silenciosos.</p>
+                        <span class="fpGproduct-price">$120.00</span>
+                        <button class="fpGbtn-buy">Comprar ahora</button>
+                    </div>
+                </div>
+                <!-- Navegación -->
+                <div class="fpGswiper-button-next"></div>
+                <div class="fpGswiper-button-prev"></div>
+                <div class="fpGswiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+      
+
+
+
+
+
+
+
+
+
+    <section class="clssCntc-branches">
+        <div class="clssCntc-container">
+            <h2 class="clssCntc-title">Nuestras Sucursales</h2>
+            <div class="clssCntc-grid">
+                <!-- Sucursal 1 -->
+                <div class="clssCntc-card">
+                    <h3 class="clssCntc-branch-name">Sucursal Central</h3>
+                    <p class="clssCntc-address">Av. Principal #123, Centro, Ciudad</p>
+                    <p class="clssCntc-phone"><i class="fas fa-phone"></i> (123) 456-7890</p>
+                    <p class="clssCntc-email"><i class="fas fa-envelope"></i> central@ecommerce.com</p>
+                </div>
+    
+                <!-- Sucursal 2 -->
+                <div class="clssCntc-card">
+                    <h3 class="clssCntc-branch-name">Sucursal Norte</h3>
+                    <p class="clssCntc-address">Calle Norte #456, Zona Norte, Ciudad</p>
+                    <p class="clssCntc-phone"><i class="fas fa-phone"></i> (123) 456-7891</p>
+                    <p class="clssCntc-email"><i class="fas fa-envelope"></i> norte@ecommerce.com</p>
+                </div>
+    
+                <!-- Sucursal 3 -->
+                <div class="clssCntc-card">
+                    <h3 class="clssCntc-branch-name">Sucursal Sur</h3>
+                    <p class="clssCntc-address">Calle Sur #789, Zona Sur, Ciudad</p>
+                    <p class="clssCntc-phone"><i class="fas fa-phone"></i> (123) 456-7892</p>
+                    <p class="clssCntc-email"><i class="fas fa-envelope"></i> sur@ecommerce.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+
+
+
+
+
+
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
